@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Arcanum
 {
-    public enum Spells { Typhoon, BlackHole, Bullet}
+    public enum Spells { Typhoon, WaterBalloon, Bullet}
 
     [RequireComponent(typeof(BlackHoleMaker))]
     [RequireComponent(typeof(TyphoonMaker))]
@@ -13,10 +13,10 @@ namespace Arcanum
     {
         public void BuildSpell(Spells type)
         {
-            if(Spells.BlackHole == type)
+            if(Spells.WaterBalloon == type)
             {
-                var blackHole = this.GetComponent<BlackHoleMaker>().Make();
-                blackHole.transform.position = this.transform.position;
+                var waterballoon = this.GetComponent<WaterBalloonMaker>().Make();
+                waterballoon.transform.position = this.transform.position;
             }
             else if (Spells.Typhoon == type)
             {
@@ -34,7 +34,7 @@ namespace Arcanum
         {
             if (Input.GetButtonDown("Jump"))
             {
-                this.BuildSpell(Spells.BlackHole);
+                this.BuildSpell(Spells.WaterBalloon);
             }
             else if(Input.GetButtonDown("Fire1"))
             {
