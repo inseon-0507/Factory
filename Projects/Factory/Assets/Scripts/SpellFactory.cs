@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace Arcanum
 {
-    public enum Spells { Typhoon, BlackHole, Meteor}
+    public enum Spells { Typhoon, BlackHole, Bullet}
 
     [RequireComponent(typeof(BlackHoleMaker))]
     [RequireComponent(typeof(TyphoonMaker))]
-    [RequireComponent(typeof(MeteorMaker))]
+    [RequireComponent(typeof(BulletMaker))]
     public class SpellFactory : MonoBehaviour
     {
         public void BuildSpell(Spells type)
@@ -23,10 +23,10 @@ namespace Arcanum
                 var typhoon = this.GetComponent<TyphoonMaker>().Make();
                 typhoon.transform.position = this.transform.position;
             }
-            else if (Spells.Meteor == type)
+            else if (Spells.Bullet == type)
             {
-                var meteor = this.GetComponent<MeteorMaker>().Make();
-                meteor.transform.position = this.transform.position;
+                var bullet = this.GetComponent<BulletMaker>().Make();
+                bullet.transform.position = this.transform.position;
             }
         }
 
@@ -42,7 +42,7 @@ namespace Arcanum
             }
             else if (Input.GetButtonDown("Fire2"))
             {
-                this.BuildSpell(Spells.Meteor);
+                this.BuildSpell(Spells.Bullet);
             }
          }
 

@@ -2,7 +2,7 @@
 
 public class Factory : MonoBehaviour
 {
-    public enum Spells { Fireball, BlackHole, Meteor}
+    public enum Spells { Bullet, BlackHole, Meteor}
 
     private static int SerialID = 0;
 
