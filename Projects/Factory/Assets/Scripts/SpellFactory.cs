@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Arcanum
+namespace StellarGames
 {
     public enum Spells { Typhoon, WaterBalloon, Bullet}
 
-    [RequireComponent(typeof(BlackHoleMaker))]
+    [RequireComponent(typeof(WaterBalloonMaker))]
     [RequireComponent(typeof(TyphoonMaker))]
     [RequireComponent(typeof(BulletMaker))]
     public class SpellFactory : MonoBehaviour

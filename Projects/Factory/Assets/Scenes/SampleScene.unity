@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -378,28 +378,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!1 &936656061 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2036623790823495974, guid: 09b0380f9f6cf44018f07370fd8ab3ac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1001162065}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &936656069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936656061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea008921c4be4cccbc10363b6aa7c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloonPrefab: {fileID: 7562284643730921953, guid: 9b269eda9706047898391319d5d12da8,
-    type: 3}
-  waterParticlesPrefab: {fileID: 8030931214199222681, guid: 60bdb493025aa4839882f3e79a09502f,
-    type: 3}
 --- !u!1001 &1001162065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,6 +446,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellFactory
       objectReference: {fileID: 0}
+    - target: {fileID: 2504353583682623108, guid: 09b0380f9f6cf44018f07370fd8ab3ac,
+        type: 3}
+      propertyPath: balloonPrefab
+      value: 
+      objectReference: {fileID: 7562284643730921953, guid: 9b269eda9706047898391319d5d12da8,
+        type: 3}
+    - target: {fileID: 2504353583682623108, guid: 09b0380f9f6cf44018f07370fd8ab3ac,
+        type: 3}
+      propertyPath: waterParticlesPrefab
+      value: 
+      objectReference: {fileID: 8030931214199222681, guid: 60bdb493025aa4839882f3e79a09502f,
+        type: 3}
+    - target: {fileID: 2725002383157503148, guid: 09b0380f9f6cf44018f07370fd8ab3ac,
+        type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 178169866492224321, guid: 7e0edaac1e5602b46a486edd0f5f3934,
+        type: 3}
+    - target: {fileID: 5865152841265997665, guid: 09b0380f9f6cf44018f07370fd8ab3ac,
+        type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 964905220173935684, guid: c9a3c876289554e89a687fb9427c7838,
+        type: 3}
     - target: {fileID: 7749861216209970422, guid: 09b0380f9f6cf44018f07370fd8ab3ac,
         type: 3}
       propertyPath: prefab
@@ -482,13 +484,11 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents:
     - {fileID: 2036623790823496153, guid: 09b0380f9f6cf44018f07370fd8ab3ac, type: 3}
+    - {fileID: 2036623790823496155, guid: 09b0380f9f6cf44018f07370fd8ab3ac, type: 3}
+    - {fileID: 2036623790823496152, guid: 09b0380f9f6cf44018f07370fd8ab3ac, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2036623790823495974, guid: 09b0380f9f6cf44018f07370fd8ab3ac,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 936656069}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09b0380f9f6cf44018f07370fd8ab3ac, type: 3}
 --- !u!850595691 &1366495866
 LightingSettings:

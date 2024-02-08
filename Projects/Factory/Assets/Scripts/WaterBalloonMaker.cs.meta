@@ -3,7 +3,11 @@ guid: 1ea008921c4be4cccbc10363b6aa7c85
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - balloonPrefab: {fileID: 7562284643730921953, guid: 9b269eda9706047898391319d5d12da8,
+      type: 3}
+  - waterParticlesPrefab: {fileID: 8030931214199222681, guid: 60bdb493025aa4839882f3e79a09502f,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

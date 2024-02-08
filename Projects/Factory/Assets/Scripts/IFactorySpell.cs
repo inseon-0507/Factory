@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Arcanum
+namespace StellarGames
 {
     public interface IFactorySpell
     {
